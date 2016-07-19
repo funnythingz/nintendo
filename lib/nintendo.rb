@@ -1,4 +1,5 @@
 require "nintendo/version"
+require "nokogiri/html"
 
 module Nintendo
   class Nintendo
