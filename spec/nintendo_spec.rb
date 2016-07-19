@@ -1,11 +1,12 @@
 require 'spec_helper'
 
 describe Nintendo do
-  it 'has a version number' do
-    expect(Nintendo::VERSION).not_to be nil
-  end
 
-  it 'does something useful' do
-    expect(false).to eq(true)
+  describe 'method' do
+    let(:nintendo) { Nintendo::Nintendo.new }
+
+    it '銘柄コード' do
+      expect(nintendo.stockboard_code).to eq '7974'
+    end
   end
 end

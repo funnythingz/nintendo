@@ -9,4 +9,5 @@ if ARGV.empty?
   puts nintendo.info
 else
   puts nintendo.kabuka if ARGV.first == 'kabuka'
+  puts nintendo.stockboard_code if ARGV.first == 'code'
 end
