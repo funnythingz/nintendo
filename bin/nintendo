@@ -8,6 +8,6 @@ nintendo = Nintendo::Nintendo.new
 if ARGV.empty?
   puts nintendo.info
 else
-  puts nintendo.kabuka if ARGV.first == 'kabuka'
+  puts nintendo.stock_price if ARGV.first == 'stock_price'
   puts nintendo.stock_code if ARGV.first == 'stock_code'
 end
