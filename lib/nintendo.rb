@@ -2,7 +2,7 @@ require "nintendo/version"
 
 module Nintendo
   class Nintendo
-    def stockboard_code
+    def stock_code
       '7974'
     end
   end

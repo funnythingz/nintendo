@@ -6,7 +6,7 @@ describe Nintendo do
     let(:nintendo) { Nintendo::Nintendo.new }
 
     it '銘柄コード' do
-      expect(nintendo.stockboard_code).to eq '7974'
+      expect(nintendo.stock_code).to eq '7974'
     end
   end
 end
