@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "nintendo"
+
+nintendo = Nintendo::Nintendo.new
+
+if ARGV.empty?
+  puts nintendo.info
+else
+  puts nintendo.kabuka if ARGV.first == 'kabuka'
+end
