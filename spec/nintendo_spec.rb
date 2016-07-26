@@ -11,7 +11,7 @@ describe Nintendo do
 
     it '株価' do
       # TODO: 株価
-      expect(nintendo.stock_price).to eq ''
+      expect(nintendo.stock_price).to match /^[0-9,.]+$/
     end
   end
 end

@@ -15,9 +15,7 @@ module Nintendo
     def stock_price
       # TODO: 株価をスクレイピングして返す
       doc = Nokogiri::HTML(open('http://minkabu.jp/stock/7974'))
-      doc.css('.stock_price').each do |price|
-        price.content
-      end
+      doc.css('div.stock_price').first.text
     end
   end
 end
